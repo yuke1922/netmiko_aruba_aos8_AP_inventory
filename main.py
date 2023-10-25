@@ -28,7 +28,7 @@ device = {
 clear()
 net_connect = ConnectHandler(**device)
 
-ap_db = (net_connect.send_command('show ap database',  use_textfsm=True))
+ap_db = (net_connect.send_command('show ap database long',  use_textfsm=True))
 os.system('mkdir output')
 
 keys = ap_db[0].keys()
